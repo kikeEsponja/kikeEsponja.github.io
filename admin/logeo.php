@@ -1,12 +1,3 @@
-<?php 
-	session_start();
-	if(isset($_SESSION['nombre'])){
-		include "../src/js/config.php"; 
-		
-		$sql="SELECT * FROM `alumnos`";
-
-		$query = mysqli_query($conn,$sql);
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,20 +10,34 @@
     <title>Administración</title>
 </head>
 <body>
+	<div class="blue"></div>
     <center>
-        <h1>Algo salió muy mal! <span id="bienvenido"><?php echo $_SESSION['nombre']; ?></span></h1>
-        <a href="../index.php">Ir a inicio</a>
-        <a href="./login_alum.php">Volver</a>
+        <h1 class="h1">Seleccione su perfil:</h1>
+        <div>
+            <button type="button" class="btn btn-success" id="profe">PROFESOR</button>
+            <button type="button" class="btn btn-primary" id="alumno">ALUMNO</button>
+        </div>
+        <br>
+        <button type="button" class="btn btn-warning" onclick="goBack()">Volver</button>
     </center>
 
+    <script>
+        const profe = document.getElementById('profe');
+        profe.addEventListener('click', () =>{
+            window.location.href = './login_prof.php';
+        });
+
+        const alumn = document.getElementById('alumno');
+        alumn.addEventListener('click', () =>{
+            window.location.href = './login_alum.php';
+        });
+
+        const goBack = () =>{
+            window.history.back();
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src='./admin.js'></script>
 </body>
 </html>
-<?php
-	}
-	else
-	{
-		header('location: ../index.php');
-	}
-?>

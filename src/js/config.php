@@ -4,25 +4,28 @@
                                 BASES DE DATOS
 ---------------------------------------------------------------------------------*/
 
-/* ---------------------------------LOCAL-------------------------------------------*/
+/* ----------------------------------LOCAL---------------------------------------*/
 $dbHost = 'localhost';
 $dbUsername = 'root';
 $dbPassword = '';
 $dbDatabase = 'escuela';
 $conn = mysqli_connect($dbHost, $dbUsername, $dbPassword, $dbDatabase);
 
-/*if($conn){
+
+//activar para comprobar la conexión a la bdd
+/*
+if($conn){
     echo "todo ok";
 }else{
     echo "todo mal";
-}
+}*/
 /* ------------------------------- HOSTINGER ----------------------------------------
 
 $dbHost = 'leeresmipasion.com';
-$dbUsername = 'kike';
+$dbUsername = 'root';
 $dbPassword = '';
-$dbDatabase = 'kiosco';
-$conn = mysqli_connect($dbHost, $dbUsername, $dbPassword, $dbDatabase);*/
+$dbDatabase = 'expand';
+$conn = mysqli_connect($dbHost, $dbUsername, $dbPassword, $dbDatabase);
 
 /*if($conn){
     echo "todo ok";
