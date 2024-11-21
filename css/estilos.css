@@ -1,0 +1,360 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    margin: 0;
+}
+body{
+    margin-top: 10%; /*usar con el header fijo */
+    background: #222222;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    position: fixed;
+    top:40%;
+    right: 20px;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top:0;
+}
+.loader-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+.loader {
+    position: absolute;
+    left: 0;
+    background: #31af51;
+    width: 30px;
+    height: 100%;
+    border: 2px solid #ddd;
+    animation: spin 2s linear alternate;
+}
+.bootstrap{
+    background: #3fb2e7;
+    bottom: 0;
+    height: 90%;
+}
+.java, .py{
+    background: orange;
+    bottom: 0;
+    height: 40%;
+}
+.js{
+    background: #2a7be4;
+    bottom: 0;
+    height: 70%;
+}
+.php{
+    background: #fccd32;
+    bottom: 0;
+    height: 50%;
+}
+.sql{
+    background: red;
+    bottom: 0;
+    height: 20%;
+}
+.percentage {
+    position: absolute;
+    right: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+@keyframes spin {
+    100% {
+      transform: translateY(0%);
+      background: #31af51;
+    }
+    0% {
+      transform: translateY(100%);
+      background: #ac2e2e;
+    }
+}
+nav{
+    background: #c8b700;
+}
+.navbar-nav{
+    display: contents;
+}
+.logo{
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: 600;
+}
+.presentacion{
+    background: url("/img/enriquesvg.svg");
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+.botones-modal-enlaces{
+    display:flex;
+    width: 30%;
+    margin: 1%;
+}
+.botones-modal-enlaces > button{
+    margin: 1%;
+}
+.certificados{
+    display: flex;
+    flex-direction: column;
+}
+.certificados > li, a{
+    text-decoration: none;
+    color: seagreen;
+}
+.sobremi{
+    width: 55%;
+    border-radius: 20px;
+    margin: 1%;
+    border: dashed #12338f 6px;
+    text-align: center;
+}
+.sobremi > h3{
+    margin: 1%;
+}
+@keyframes cambioTecnologia{
+    0%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    25%{
+        opacity: 0.75;
+        transform: translateY(-10px);
+    }
+    50%{
+        opacity: 0.5;
+        transform: translateY(-20px);
+    }
+    75%{
+        opacity: 0.25;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+}
+.animacion-cambio{
+    animation: cambioTecnologia 0.5s ease-in-out;
+}
+.sobremi-texto{
+    position: absolute;
+    border: dashed #12338f 6px;
+    border-radius: 20px  0px 20px 0px;
+    width:35%;
+    height: 200px;
+    right: 0;
+    top: 50rem;
+    margin-right: 4%;
+    text-align: end;
+}
+.sobremi-texto > form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tecnologias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.tecnologias > div{
+    border: solid black 3px; 
+    width: 160px;
+    height: 142px; 
+    background: #666; 
+    border-radius: 0 30px;
+    margin: 1%;
+}
+.filetype{
+    font-size: 25px;
+}
+.trabajos{
+    background: url("./img/matrix.jpg");
+    opacity: 0.5;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    margin: 1%;
+    width: 400px;
+}
+.card-body{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.youtube{
+    font-size: 40px;
+    margin: 0 0 0 5%;
+}
+
+.puntos{
+    display: flex;
+}
+.t{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 1%;
+}
+.espacioUno{
+    flex-direction: column;
+}
+.espacioUno > div{
+    display: flex;
+    justify-content: center;
+}
+.img-carrusel{
+    width: 50%;
+    height: 600px;
+    margin: 1%;
+    border-radius: 10px;
+}
+.carrusel > div{
+    display: flex;
+    justify-content: center;
+}
+#contacto{
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+}
+#contacto > ul{
+    list-style: none;
+    font-size: larger;
+}
+.formulario{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    width: 100%;
+}
+
+textarea{
+    resize: none;
+    width: 100%;
+    height: 100px;
+}
+details, .story > p, .libros > p, ul{
+    width: 75%;
+    font-size: 20px;
+}
+/* HISTORIA */
+.indice{
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+}
+.indice > ul{
+    list-style: none;
+    margin-bottom: 10%;
+}
+.tusclases{
+	display:flex;
+}
+@media (min-width:1500px) {
+    .sobremi-texto{
+        top: 65rem;
+        /*height: 400px;*/
+    }
+}
+@media screen and (max-width: 1330px) and (min-width: 700px) {
+    .presentacion{
+        background-size: 45%;
+    }
+    .sobremi{
+        width: 50%;
+    }
+}
+@media (max-width: 991px) {
+    header{
+        position: relative;
+    }
+    body{
+        margin-top: 0;
+    }
+    .sobremi-texto{
+        top: 45rem;
+        /*height: 200px;*/
+    }
+}
+@media screen and (max-width: 800px) and (min-width: 200px){
+    .img-carrusel{
+        height: 200px;
+    }
+    .sobremi-texto{
+        top: 35rem;
+        /*height: 200px;*/
+    }
+}
+@media screen and (max-width:794px) and (min-width: 300px) {
+    .sobremi-texto{
+        /*sheight: 600px;*/
+    }
+}
+@media screen and (max-width: 699px) and (min-width: 300px) {
+    .presentacion{
+        background-size: 50%;
+    }
+    .sobremi{
+        width: 50%;
+    }
+}
+@media screen and (max-width:500px) and (min-width:100px) {
+    .presentacion{
+        background-position: left top;
+    }
+    h1{
+        margin-top: 16rem;
+    }
+    .sobremi{
+        width: 95%;
+    }
+    .sobremi-texto{
+        /*top: 8rem;
+        height: 400px;*/
+        display: none;
+    }
+}
+@media(max-width: 414px){
+    .card{
+        width: 300px;
+    }
+}
+@media screen and (max-width:350px) and (min-width:100px) {
+    h1{
+        margin-top: 14rem;
+    }
+    .desaparece{
+        display: none;
+    }
+}

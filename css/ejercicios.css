@@ -1,0 +1,10 @@
+body{
+    background: linear-gradient(#12338f, #8f2233);
+    color: #fff;
+}
+
+div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}

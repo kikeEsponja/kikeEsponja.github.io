@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Enrique Alejandro Gregorio Barreto Cortez">
+    <meta name="description" content="portafolio">
+    <link rel="shortcut icon" href="/img/logoparami2.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Finger Paint" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/estilos.css" type="text/css">
+    <title>Portafolio</title>
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand logo" href="#" style="font-family: 'Finger Paint', sans-serif;"><img class="logo" src="/img/webprog.jpg" width="7%"> E.A.B.C</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: flex-end;">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html"><img src="/img/flag-spain.svg" style="width: 50px; height: 50px;"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="/img/flag-england.svg" style="width: 50px; height: 50px;"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="presentacion">
+        <div class="sobremi">
+            <h1 id="inicio">Enrique Alejandro Barreto Cortéz</h1>
+            <h3>I am a Front-end developer <span class="desaparece">with over three years of experience in projects using agile methodologies. I am passionate about technology, focused on continuous improvement, constant learning, and professional growth</span>. Currently, I work with technologies such as<span id="tech"></span> and I am undergoing in<span id="cursos"></span> to enhance my skills.</h3>
+        </div>
+        <div class="sobremi-texto">
+          <h3 id="frases"></h3>
+        </div>
+        <div class="botones-modal-enlaces">
+          <!-- Button trigger enlaces -->
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+              Links
+            </button>
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Certificates
+          </button>
+        </div>
+
+        <!-- ENLACES -->
+        <div style="min-height: 120px;">
+            <div class="collapse collapse-horizontal" id="collapseWidthExample">
+              <div class="card card-body text-dark">
+                <ul>
+                  <li><a href="/html/story.html">My story</a></li>
+                  <li><a href="/html/studies.html">Studies</a></li>
+                  <li><a href="/html/books.html">Books</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        
+        <!-- MODAL -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">Certificates</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-dark certificados">
+                      <ul>
+                        <a href="https://freecodecamp.org/certification/kikeEsponja/responsive-web-design" target="_blank"><li>Responsive Web Design Certification</li></a>
+                        <a href="https://www.efset.org/cert/Dpoxwh" target="_blank"><li>English Certification</li></a>
+                      </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <!--<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
+                        <!--<button type="button" class="btn btn-primary">Aceptar</button>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL DOS -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">Personal Information</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-dark certificados">
+                      <ul>
+                        <li>Name: Enrique Alejandro Gregorio Barreto Cortéz</li>
+                        <li>Age: 41 years old</li>
+                        <li>Gender: Male</li>
+                        <li>Degree: Administration</li>
+                        <li>Ocupation: Web Developer</li>
+                        <li>Location: Argentina, Buenos Aires, Lanús</li>
+                      </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <!--<button type="button" class="btn btn-primary">Aceptar</button>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TECNOLOGÍAS -->
+        <div class="tecnologias">
+          <h4>Technologies</h4>
+
+          <div>
+            <p class="bi bi-file filetype"> Bootstrap</p>
+              <div class="puntos">
+                <div class="t bg-success"></div>
+                <div class="t bg-success"></div>
+                <div class="t bg-success"></div>
+                <div class="t bg-success"></div>
+                <div class="t bg-success"></div>
+                <div class="t bg-info"></div> <!-- usar javascript -->
+              </div>
+          </div>
+
+          <div>
+            <p class="bi bi-filetype-css filetype"> CSS</p>
+            <div class="puntos">
+              <div class="t  bg-success"></div>
+              <div class="t  bg-success"></div>
+              <div class="t  bg-success"></div>
+              <div class="t  bg-success"></div>
+              <div class="t  bg-success"></div>
+              <div class="t  bg-success"></div> <!-- usar javascript -->
+            </div>
+          </div>
+
+            <div>
+                <p class="bi bi-filetype-html filetype"> HTML</p>
+                <div class="puntos">
+                  <div class="t bg-success"></div>
+                  <div class="t bg-success"></div>
+                  <div class="t bg-success"></div>
+                  <div class="t bg-success"></div>
+                  <div class="t bg-success"></div>
+                  <div class="t bg-success"></div> <!-- usar javascript -->
+                </div>
+            </div>
+
+            <div>
+              <p class="bi bi-filetype-java filetype"> Java</p>
+                <div class="puntos">
+                  <div class="t bg-success"></div>
+                  <div class="t bg-success"></div>
+                  <div class="t bg-info"></div>
+                  <div class="t bg-warning"></div>
+                  <div class="t bg-danger"></div>
+                  <div class="t bg-danger"></div>
+                </div>
+            </div>
+
+            <div>
+              <p class="bi bi-filetype-js filetype"> javaScript</p>
+                <div class="puntos">
+                  <div class="t bg-success"></div>
+                  <div class="t bg-success"></div>
+                  <div class="t bg-success"></div>
+                  <div class="t bg-success"></div>
+                  <div class="t bg-info"></div>
+                  <div class="t bg-warning"></div> <!-- usar javascript -->
+                </div>
+            </div>
+
+            <div>
+              <p class="bi bi-filetype-php filetype"> PHP</p>
+                <div class="puntos">
+                  <div class="t bg-success"></div>
+                  <div class="t bg-success"></div>
+                  <div class="t bg-success"></div>
+                  <div class="t bg-info"></div>
+                  <div class="t bg-warning"></div>
+                  <div class="t bg-danger"></div>
+                </div>
+            </div>
+
+            <div>
+              <p class="bi bi-filetype-py filetype"> Python</p>
+                <div class="puntos">
+                  <div class="t bg-info"></div>
+                  <div class="t bg-warning"></div>
+                  <div class="t bg-danger"></div>
+                  <div class="t bg-danger"></div>
+                  <div class="t bg-danger"></div>
+                  <div class="t bg-danger"></div>
+                </div>
+            </div>
+
+            <div>
+              <p class="bi bi-filetype-sql filetype"> SQL</p>
+                <div class="puntos">
+                  <div class="t bg-success"></div>
+                  <div class="t bg-info"></div>
+                  <div class="t bg-warning"></div>
+                  <div class="t bg-danger"></div>
+                  <div class="t bg-danger"></div>
+                  <div class="t bg-danger"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TRABAJOS -->
+    <section>
+        <h2 class="text-center">My jobs</h2>
+        <div class="card-container">
+            <div class="card" style="width: 14rem;">
+                <img src="/img/logoazul.svg" class="card-img-top" alt="..." style="height: 50%;">
+                <div class="card-body">
+                  <h5 class="card-title text-dark">My current job</h5>
+                  <p class="card-text text-dark">I developed this website with a great team.</p>
+                  <a href="https://fortrainevolution.com/" class="btn btn-primary" target="_blank">Go to</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 14rem;">
+                <img src="/img/desweb.png" class="card-img-top" alt="..." style="height: 50%;">
+                <div class="card-body">
+                  <h5 class="card-title text-dark">Educative announce</h5>
+                  <p class="card-text text-dark">Advertisement for an introductory web development course designed for university students majoring in design.</p>
+                  <a href="https://ea5ee88b-db6b-4c24-b9ab-64ddfa4d3d3b-00-2vof8qcjsjag9.picard.replit.dev/" class="btn btn-primary" target="_blank">Go to</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 14rem;">
+                <img src="/img/goal.png" class="card-img-top" alt="..." style="height: 50%;">
+                <div class="card-body">
+                  <h5 class="card-title text-dark">G.O.A.L.</h5>
+                  <p class="card-text text-dark">Building a personal project, is not complete but i am still working on it</p>
+                  <a href="https://qa.challengegoal.online/" class="btn btn-primary" target="_blank">Go to</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 14rem;">
+                <img src="/img/curso.png" class="card-img-top" alt="...">
+                <div class="card-body text-dark">
+                  <h5 class="card-title text-dark">Course</h5>
+                  <p class="card-text">Small web developing course for begginers.</p>
+                  <a href="/html/ejercicios.html" class="btn btn-primary" target="_blank">Go to</a>
+                  <a href="https://www.youtube.com/watch?v=lfXQ04pWo7Q&t=20s" class="bi bi-youtube text-danger youtube" target="_blank"></a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 14rem;">
+                <img src="/img/rueda.png" class="card-img-top" alt="...">
+                <div class="card-body text-dark">
+                  <h5 class="card-title text-dark">Wheel</h5>
+                  <p class="card-text">Making CSS animation experiments.</p>
+                  <a href="/html/rueda.html" class="btn btn-primary" target="_blank">Go to</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 14rem;">
+                <img src="/img/ciudad.png" class="card-img-top" alt="...">
+                <div class="card-body text-dark">
+                  <h5 class="card-title text-dark">City</h5>
+                  <p class="card-text">Making a city portrait with CSS.</p>
+                  <a href="/html/ciudad.html" class="btn btn-primary" target="_blank">Go to</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 14rem;">
+                <img src="/img/pinguino.png" class="card-img-top" alt="...">
+                <div class="card-body text-dark">
+                  <h5 class="card-title text-dark">Penguin</h5>
+                  <p class="card-text">A cute penguin says "Hello! I am made with CSS".</p>
+                  <a href="/html/pinguino.html" class="btn btn-primary" target="_blank">Go to</a>
+                </div>
+              </div>
+        </div>
+    </section>
+    <br>
+
+    <!-- CARRUSEL -->
+    <section class="carrusel">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="espacioUno">
+                  <!--<div class="textoUno">
+                      <h2>Hacemos realidad la transformación empresarial</h2>
+                      <p>Con nuestro equipo de expertos combinamos nuestra audacia y conocimientos prácticos para ofrecerles nuestros servicios de consultoría para el crecimiento y eficiencia de su organización</p>
+                  </div>-->
+                  <div>
+                      <img src="/img/html.png" class="img-carrusel">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="espacioUno">
+                  <!--<div class="textoUno">
+                      <h2>"Excelencia Tecnológica: Líderes indiscutibles en desarrollo de software"</h2>
+                      <p>trabajamos en base a una estrategia incremental elaborada bajo distintas metodologías y marcos de trabajo ágil, dependiendo de la naturaleza de cada proyecto.</p>
+                  </div>-->
+                  <div>
+                      <img src="/img/css.webp" class="img-carrusel">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="espacioUno">
+                  <!--<div class="textoUno">
+                      <h2>"Expertos en creación de sitios web y mobile: Somos la elección adecuada para Ti"</h2>
+                      <p>Con nuestro equipo de expertos combinamos nuestra audacia y conocimientos prácticos para ofrecerles nuestros servicios de consultoría para el crecimiento y eficiencia de su organización.</p>
+                  </div>-->
+                  <div>
+                      <img src="/img/js.jpeg" class="img-carrusel">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div>
+            <button type="button" class="btn btn-danger mas-info" data-bs-target="#exampleModal1" data-bs-toggle="modal">More Information</button>
+          </div>
+    </section>
+
+    <aside class="text-primary">
+      <a href="http://linkedin.com/in/enrique-barreto-749077265" target="_blank"><i class="bi bi-linkedin"></i></a>
+      <a href="https://www.instagram.com/kike.esponja/"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61552678348869" target="_blank"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.youtube.com/channel/UCM_7tBVCY5EQtmoK66QOEQw" target="_blank"><i class="bi bi-youtube"></i></a>
+    </aside>
+
+    <div class="formulario">
+      <form action="/html/mensaje.php" method="POST">
+        <h3>Contact.</h3>
+        <br>
+        <label for="nombre">Name</label>
+        <input type="text" name="nombre" id="nombre" required>
+        <label for="mail">E-mail</label>
+        <input type="email" name="mail" id="mail" required>
+        <label for="telefono">Phone</label>
+        <input type="tel" name="telefono" id="telefono" required>
+        <label for="mensaje">Let a menssage</label>
+        <textarea id="mensaje" name="mensaje"></textarea>
+        <button type="submit" class="btn btn-success">Send</button>
+      </form>
+    </div>
+
+    <footer>
+      <div id="contacto">
+        <ul class="text-center">
+          <li class="bi bi-phone"> phone: 1131844709</li>
+          <li class="bi bi-mailbox"> e-mail: element3999@gmail.com</li>
+          <a href="#inicio" class="btn btn-warning"><li>Back to top</li></a>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="/js/indexen.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
