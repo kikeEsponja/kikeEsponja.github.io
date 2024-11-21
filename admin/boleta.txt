@@ -1,0 +1,11 @@
+banana 			1000 12
+cerveza brahma		2600 12
+cerveza heineken	3000 12
+cerveza iguana 		2000 12
+cerveza miller		3000 12
+cerveza Palermo		2000 12
+cerveza quilmes		2500 12
+cerveza stella		3000 12
+huevos			5000 12
+Coca-Cola		3200 12
+pepsi-cola		3000 12
